@@ -63,24 +63,7 @@ public class UsecasesActivity2 extends Activity {//implements Runnable{
                {
             	  isService = true;
             	  showDialog(1);   
-            	  //startService(new Intent(UsecasesActivity.this, UpdateListService.class));
-
-            	  /*
-                  final ProgressDialog progDailog = ProgressDialog.show(UsecasesActivity.this,
-                          "Berkshire Database", "Updating please wait....",
-                          true);
-                          new Thread() {
-                          public void run() {
-                                              try{
-                               // just doing some long operation
-                              
-                          } catch (Exception e) {  }
-                       handler.sendEmptyMessage(0);
-                       //Toast.makeText(UsecasesActivity.this, "Updation Complete", Toast.LENGTH_SHORT).show();
-                     progDailog.dismiss();                                   
-                     }
-                 }.start();
-            	 */ 
+            	
                }
           }
          );
@@ -108,16 +91,7 @@ public class UsecasesActivity2 extends Activity {//implements Runnable{
     
     final Handler handler = new Handler() {
         public void handleMessage(Message msg) {
-            /*
-        	// Get the current value of the variable total from the message data
-            // and update the progress bar.
-            int total = msg.getData().getInt("total");
-            progDialog.setProgress(total);
-            if (total <= 0){
-                dismissDialog(1);
-                progThread.setState(ProgressThread.DONE);
-            }
-            */
+         
         }
     };
     
