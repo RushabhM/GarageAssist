@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <LinearLayout 
+      		xmlns:android="http://schemas.android.com/apk/res/android"
+      		android:id="@+id/LinearLayout01"
+	        android:layout_height="fill_parent" 
+	        android:layout_width="fill_parent" 
+	        android:orientation="vertical" 
+	        android:background="#ffffffff">	
+	
+	        <TableLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:paddingRight="20dp"
+	            android:paddingLeft="15dp" >
+
+	                
+					 <TableRow android:layout_height="wrap_content" 
+	                        android:layout_width="wrap_content" 
+	                        android:gravity="center">
+	                        <TextView android:layout_width="122dp"
+									android:layout_height="36dp"
+									
+									android:textStyle="bold">
+	                        </TextView>
+	                </TableRow>
+
+	             <TableRow
+	                 android:layout_width="wrap_content"
+	                 android:layout_height="wrap_content"
+	                 android:gravity="center" >
+
+	                 <TextView
+	                     android:id="@+id/policylabel"
+	                     android:layout_width="0dp"
+	                     android:layout_height="wrap_content"
+	                     android:layout_weight="1"
+	                     android:gravity="left"
+	                     android:text="@string/policy"
+	                     android:textStyle="bold" >
+	                 </TextView>
+
+	                 <EditText
+	                     android:id="@+id/policytext"
+	                     android:layout_width="195dp"
+	                     android:layout_height="wrap_content"
+	                     android:inputType="text">
+	                 </EditText>
+	             </TableRow>
+	                
+	                <TableRow
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:gravity="center" >
+
+	                    <TextView
+	                        android:id="@+id/mobilelabel"
+	                        android:layout_width="10dp"
+	                        android:layout_height="wrap_content"
+	                        android:layout_weight="1"
+	                        android:gravity="left"
+	                        android:text="@string/mobile"
+	                        android:textStyle="bold" >
+	                    </TextView>
+
+	                    <EditText
+	                        android:id="@+id/mobiletext"
+	                        android:layout_width="195dp"
+	                        android:layout_height="wrap_content"
+	                        android:inputType="text">
+	                    </EditText>
+	                </TableRow>
+	                	                
+	               <TableRow
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:gravity="center" >
+
+	                    <TextView
+	                        android:id="@+id/vehiclelabel"
+	                        android:layout_width="10dp"
+	                        android:layout_height="wrap_content"
+	                        android:layout_weight="1"
+	                        android:gravity="left"
+	                        android:text="@string/vehicle"
+	                        android:textStyle="bold" >
+	                    </TextView>
+
+	                    <EditText
+	                        android:id="@+id/vehicletext"
+	                        android:layout_width="195dp"
+	                        android:layout_height="wrap_content"
+	                        android:inputType="text">
+	                    </EditText>
+	                </TableRow>
+	                
+	               	<TableRow
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:gravity="center" >
+
+	                    <TextView
+	                        android:id="@+id/emaillabel"
+	                        android:layout_width="10dp"
+	                        android:layout_height="wrap_content"
+	                        android:layout_weight="1"
+	                        android:gravity="left"
+	                        android:text="@string/email"
+	                        android:textStyle="bold" >
+	                    </TextView>
+
+	                    <EditText
+	                        android:id="@+id/emailtext"
+	                        android:layout_width="195dp"
+	                        android:layout_height="wrap_content"
+	                        android:inputType="text">
+	                    </EditText>
+	                </TableRow>
+	               
+	        </TableLayout>
+	        
+	        
+	         <TableLayout android:layout_height="wrap_content" 
+	                android:layout_width="fill_parent">
+            
+	             <TableRow android:layout_height="wrap_content" 
+	                        android:layout_width="wrap_content" 
+	                        android:gravity="center"
+	                        >
+	                <Button
+	                android:id="@+id/attach"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:layout_marginTop="10dip"
+	                android:minWidth="120dp"
+	                android:text="@string/attachstr" />
+	                <!-- /TableRow>
+	                      
+	             	<TableRow android:layout_height="wrap_content" 
+	                        android:layout_width="wrap_content" 
+	                        android:gravity="center"
+	                        >
+	                    <TextView
+	                        android:id="@+id/or"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        
+	                        android:gravity="center"
+	                        android:text="@string/or"
+	                        android:textStyle="bold" >
+	                    </TextView>
+	                </TableRow>        
+	                    
+	                    <TableRow android:layout_height="wrap_content" 
+	                        android:layout_width="wrap_content" 
+	                        android:gravity="center"
+	                       -->
+
+	                <Button
+	                    android:id="@+id/photo"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="center"
+	                	android:layout_marginTop="10dip"
+	                    android:minWidth="120dp"
+	                    android:text="@string/photostr" />
+
+	                </TableRow>
+	                
+	                <TableRow android:layout_height="wrap_content" 
+	                          android:layout_width="wrap_content" 
+	                          android:gravity="center"
+	                        >
+	                        <Button
+	                android:id="@+id/registerclaim"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:layout_marginTop="10dip"
+	                android:minWidth="160dp"
+	                android:text="@string/regstr" />
+	                </TableRow>
+	                	                
+	        </TableLayout>
+	        
+	        
+</LinearLayout>

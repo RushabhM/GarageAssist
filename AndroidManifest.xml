@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.internshala"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application
+        android:icon="@drawable/carcare3"
+        android:label="@string/app_name" >
+        <activity
+            android:name="InternshalaActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="UsecasesActivity"
+            android:label="@string/app_name2" >
+        </activity>
+        
+        <activity
+            android:name="SearchSettingsActivity"
+            android:label="@string/app_name3" >
+        </activity>
+        
+        <activity
+            android:name="RegisterClaimActivity"
+            android:label="@string/app_name4" >
+        </activity>
+        
+        <activity
+            android:name="GarageListActivity"
+            android:label="@string/app_name5" >
+        </activity>
+        
+        <activity
+            android:name="UpdateListActivity"
+            android:label="@string/app_name7" >
+        </activity>
+        
+        <activity
+            android:name="GarageDetailsActivity"
+            android:label="@string/app_name8" >
+        </activity>
+        
+        <activity android:name="ShowMapActivity" android:label="@string/app_name6"
+     		android:theme="@android:style/Theme.NoTitleBar"/>
+        
+        <uses-library android:name="com.google.android.maps" />
+        
+        <service android:enabled="true" android:name=".UpdateListService" />
+        
+    </application>
+    
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	
+	<uses-permission android:name="android.permission.CALL_PHONE" />
+	<uses-permission android:name="android.permission.CALL_PRIVILEGED"/>
+	
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	
+</manifest>

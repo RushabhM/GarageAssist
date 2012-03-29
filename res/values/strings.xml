@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, InternshalaActivity!</string>
+
+    <string name="app_name">Berkshire</string>
+    <string name="app_name1">Login</string>
+    <string name="app_name2">Functions</string>
+    <string name="app_name3">Advanced Options</string>
+    <string name="app_name4">Register Claim</string>
+    <string name="app_name5">Garage List</string>
+    <string name="app_name6">Map View</string>
+    <string name="app_name7">Update List</string>
+    <string name="app_name8">Garage Details</string>
+    
+    
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Login">Login</string>
+    <string name="Rememberme"> Remember Me</string>
+    <string name="usecase3">Update Garage list</string>
+    <string name="usecase2">Register a Claim</string>
+    <string name="usecase1">Search Garages</string>
+    <string name="mapskey">0fMgJJ83mbU_9z2CZO46wsxSAeodpoG6q3cw84w</string>
+
+    <string name="policy">Policy No.</string>
+    <string name="mobile">Mobile No.</string>
+    <string name="vehicle">Vehicle No.</string>
+    <string name="email">Email</string>
+    
+    <string name="attachstr">Attach a File</string>
+    <string name="photostr">Take a Photo</string>
+    <string name="regstr">Register a Claim</string>
+    <string name="or"> OR </string>
+    
+    
+</resources>

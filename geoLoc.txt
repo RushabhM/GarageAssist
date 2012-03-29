@@ -1,0 +1,20 @@
+<Garage Name="Ambition auto pvt ltd" Cashless="Yes" Manufacturer="Mahindra and Mahindra">
+<Address Street="3/2 woodllen textiles industries, 2 lake road, bhandup (west)" City="Mumbai" PinCode="400078" State="Maharashtra"/>
+<ContactDetails ContactPerson="Jude" Landline="022-25943334" Mobile="9663374513" EMail="am@vsnl.net"/>
+</Garage>
+
+<lat>19.1569850</lat>	
+<lng>72.9334150</lng>
+
+
+<Garage Name="ABC Hyundai" Cashless="Yes" Manufacturer="All Models">
+<Address Street="7, Jamshedji Tata road, Churchgate" City="Mumbai" PinCode="400005 " State="Maharashtra"/>
+<ContactDetails ContactPerson="Tejas Mange" Landline="022-22047171 " Mobile="" EMail=""/>
+</Garage>
+
+<lat>18.9311522</lat>
+<lng>72.8266539</lng>
+
+my location --
+<lat>19.1739720</lat>
+<lng>72.9581360</lng

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <LinearLayout 
+      		xmlns:android="http://schemas.android.com/apk/res/android"
+      		android:id="@+id/LinearLayout01"
+	        android:layout_height="fill_parent" 
+	        android:layout_width="fill_parent" 
+	        android:orientation="vertical" 
+	        android:background="#ffffffff">	
+	
+	        <TableLayout android:layout_height="wrap_content" 
+	                android:layout_width="fill_parent">
+
+	            	<TableRow android:layout_height="wrap_content" 
+	                        android:layout_width="wrap_content">
+
+	                <LinearLayout
+	                    android:layout_width="199dp"
+	                    android:layout_height="55dp"
+	                    android:gravity="center"
+	                    android:textStyle="bold" >
+	                </LinearLayout>
+
+	                </TableRow>
+
+	            <TableRow android:layout_width="wrap_content"
+	            	     android:layout_height="wrap_content" 
+	            	     android:gravity="center">
+
+	            	     <ImageView
+	            	     android:layout_width="199dp"
+	            	     android:layout_height="55dp"
+	            	     android:background="@drawable/logo"
+	                     android:textStyle="bold" />
+	             </TableRow>
+	                
+				<TableRow android:layout_height="wrap_content" 
+	                        android:layout_width="wrap_content">
+
+	                <LinearLayout
+	                    android:layout_width="199dp"
+	                    android:layout_height="55dp"
+	                    android:gravity="center"
+	                    android:textStyle="bold" >
+	                </LinearLayout>
+
+	            </TableRow>
+	            
+	             <TableRow android:layout_height="wrap_content" 
+	                        android:layout_width="wrap_content" 
+	                        android:gravity="center"
+	                        >
+	                        <Button
+	                android:id="@+id/btn_1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:layout_marginTop="10dip"
+	                android:minWidth="160dp"
+	                android:text="@string/usecase1" />
+	                       
+	                </TableRow>
+	                
+	                <TableRow android:layout_height="wrap_content" 
+	                          android:layout_width="wrap_content" 
+	                          android:gravity="center"
+	                        >
+	                        <Button
+	                android:id="@+id/btn_2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:layout_marginTop="10dip"
+	                android:minWidth="160dp"
+	                android:text="@string/usecase2" />
+	                </TableRow>
+	                
+	                <TableRow android:layout_height="wrap_content" 
+	                          android:layout_width="wrap_content" 
+	                          android:gravity="center"
+	                        >
+	                        <Button
+	                android:id="@+id/btn_3"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:layout_marginTop="10dip"
+	                android:minWidth="160dp"
+	                android:text="@string/usecase3" />
+	                </TableRow>
+	                	                
+	        </TableLayout>
+	      
+	                   
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="setting_names">
+        <item>Distance</item>
+        <item>City</item>
+        <item>Cashless</item>
+        <item>Manufacturer</item>
+        
+    </string-array>
+    
+    
+    <array name="setting_icons">
+        <item>@drawable/icon</item>
+        <item>@drawable/icon</item>
+        
+    </array>
+    
+    
+</resources>

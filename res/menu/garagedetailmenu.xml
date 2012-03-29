@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:id="@+id/direction" android:icon="@drawable/direction1" android:title="Directions" /> 
+<item android:id="@+id/calllandline" android:icon="@drawable/landline" android:title="Landline" />
+<item android:id="@+id/callmobile" android:icon="@drawable/mobile" android:title="Mobile"/> 
+</menu>
+

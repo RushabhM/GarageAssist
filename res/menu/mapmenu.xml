@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/viewaslist" android:icon="@drawable/list2" android:title="View List" />
+<!-- item android:id="@+id/direction" android:icon="@drawable/direction1" android:title="Directions" /--> 
+<item android:id="@+id/gps" android:icon="@drawable/wireless1" android:title="Connectivity" />
+<item android:id="@+id/menu_setting" android:icon="@drawable/setting" android:title="Options"/> 
+</menu>
+
