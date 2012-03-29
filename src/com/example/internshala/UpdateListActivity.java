@@ -45,9 +45,6 @@ public class UpdateListActivity extends Activity {
     	GrgXMLParser grgParse = new GrgXMLParser();
 		garages = grgParse.runExample("http://www.internfair.internshala.com/internFiles/AppDesign/GarageList.xml");
 		
-		//Geocoder coder = new Geocoder(this);
-		
-		//GeoXMLParser geoParse = new GeoXMLParser();
 		
 		for(int i=0; i<garages.size(); i++)
 		{
@@ -56,67 +53,19 @@ public class UpdateListActivity extends Activity {
 			geo_city = temp.getAddr().getCity();//.replace(" ", "+");
 			geo_state = temp.getAddr().getState();//.replace(" ", "+");
 			
-		/*	
-			mTimer.schedule(new TimerTask()
-		    {
-		        @Override
-		        public void run()
-		        {
-		        	geo_url = "http://maps.google.com/maps/api/geocode/xml?address=" + geo_street + ",+" + geo_city + ",+" + geo_state + ",+India&sensor=true";
-					latlng = geoParse.runExample(geo_url);
-		        }
-		    }, 1000);
-			
-		*/	
-			
-		//	geo_url = "http://maps.google.com/maps/api/geocode/xml?address=" + geo_street + ",+" + geo_city + ",+" + geo_state + ",+India&sensor=true";
-		//	latlng = geoParse.runExample(geo_url);
 			
 			geo_str = geo_street + ", " + geo_city + ", " + geo_state;
 			
 			JSONObject jsonLocObj = getLocationInfo(geo_str);
 			GeoPoint parsedGeo = getLatLong(jsonLocObj);
-		/*	
-			try {
-				adr = coder.getFromLocationName(geo_str,1);
-				while(adr.size()==0)
-				adr = coder.getFromLocationName(geo_str,1);
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		    if (adr == null) {
-		        
-		    	temp.setLat(0);
-				temp.setLng(0);
-				Log.e("latlng", "locha...");
-		    }
-		    else
-		    {
-		    Address location = adr.get(0);
-		    temp.setLat(location.getLatitude());
-			temp.setLng(location.getLongitude());
-			Log.e("lat", location.getLatitude()+"");
-			Log.e("lng",location.getLongitude()+"");
-		    }
-			
-		*/	
+		
 			temp.setLat(parsedGeo.getLatitudeE6());
 			temp.setLng(parsedGeo.getLongitudeE6());
 			Log.e("lat", (double)(parsedGeo.getLatitudeE6())/(1E6)+"");
 			Log.e("lng",(double)(parsedGeo.getLongitudeE6())/(1E6)+"");
 			
 			DatabaseOp.insert(temp);
-			/*
-			Thread t = new Thread();
-			try 
-			{
-				t.wait(50);	
-			} 
-			catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-			*/
+		
 		}
         
     }
