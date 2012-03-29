@@ -43,23 +43,7 @@ public class GarageListActivity extends ListActivity {
         double d, temp;
         df = new DecimalFormat();
         
-        /*
-        while(!garages.isEmpty())
-        {
-        	temp = Double.MAX_VALUE;
-        	for(x=0; x< garages.size(); x++)
-        	{
-        		d = garages.get(x).getDistance();
-        		if(d < temp)
-        		{
-        			temp = d;
-        			index = x;
-        		}
-        	}
-        	ordered.add(garages.remove(index));
-        }
-        */
-        
+               
         Garage[] g = new Garage[size];
         Garage t;
         
@@ -164,13 +148,4 @@ public class GarageListActivity extends ListActivity {
 		}
 	}  
 	
-	/*
-	class GarageComparator implements Comparator<Garage>
-	{
-		public int compare(Garage g1, Garage g2)
-		{
-			return (int)(g1.getDistance() - g2.getDistance());
-		}
-	}
-	*/
 }
