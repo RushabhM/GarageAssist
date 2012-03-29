@@ -48,8 +48,7 @@ public class GrgXMLParser extends DefaultHandler{
 		
 			//get a new instance of parser
 			SAXParser sp = spf.newSAXParser();
-			
-			//URL sourceUrl = new URL("http://www.internfair.internshala.com/internFiles/AppDesign/GarageList.xml");
+		
 
 			URL sourceUrl = new URL(url);
 			
