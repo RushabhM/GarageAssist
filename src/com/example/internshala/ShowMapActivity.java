@@ -72,13 +72,7 @@ public class ShowMapActivity extends MapActivity{
         displayGarages(gMainList);
         
    }// end of onCreate
-	/*
-	@Override
-	public void onResume()
-	{
-		displayGarages(gMainList);
-	}
-	*/
+
 	
 	public void displayGarages(ArrayList<Garage> gl)
 	{
@@ -129,14 +123,11 @@ public class ShowMapActivity extends MapActivity{
         int test = gCurrentList.size();
         test++;
 
-        //GeoPoint point = new GeoPoint(19173972,72958136);
+        
         GeoPoint point = new GeoPoint( (int) (location.getLatitude() * 1E6),(int) (location.getLongitude() * 1E6));
         OverlayItem overlayitem = new OverlayItem(point, "Your Location" , getAddress());
-        //OverlayItem overlayitem = new OverlayItem(point, "Your Location" , (int) (location.getLatitude() * 1E6)+ "\n" +(int) (location.getLongitude() * 1E6));
         
         itemizedoverlay.addOverlay(overlayitem);
-        //itemizedoverlay.addOverlay(overlayitem1);
-        //itemizedoverlay.addOverlay(overlayitem2);
         
         Drawable myloc = this.getResources().getDrawable(R.drawable.myloc3);
         myloc.setBounds(0, 0, myloc.getIntrinsicWidth(), myloc.getIntrinsicHeight());
@@ -147,9 +138,11 @@ public class ShowMapActivity extends MapActivity{
 	
 	
 	 	public static double distFrom(double lat1, double lng1, double lat2, double lng2) {
+		    
 		    //double earthRadius = 3958.75; 			in miles
-	 		double earthRadius = 6731;					// in km
-	 		double dLat = Math.toRadians(lat2-lat1);
+		    
+	 	    double earthRadius = 6731;					// in km
+	 	    double dLat = Math.toRadians(lat2-lat1);
 		    double dLng = Math.toRadians(lng2-lng1);
 		    double x = Math.sin(dLat/2);
 		    double y = Math.sin(dLng/2);
