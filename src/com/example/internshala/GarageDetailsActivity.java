@@ -1,7 +1,5 @@
 package com.example.internshala;
 
-//key- 0fMgJJ83mbU_9z2CZO46wsxSAeodpoG6q3cw84w
-//certi - AB:7E:E2:55:B3:91:88:5D:99:37:FF:1D:C5:27:20:35
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
